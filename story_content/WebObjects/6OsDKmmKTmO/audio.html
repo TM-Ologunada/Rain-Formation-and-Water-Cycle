@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio id="myAudio" autoplay>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  window.addEventListener("message", function(event) {
+      var audio = document.getElementById("myAudio");
+      audio.volume = event.data;
+  });
+</script>
+
+</body>
+</html>
